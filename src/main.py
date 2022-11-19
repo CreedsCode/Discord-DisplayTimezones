@@ -11,9 +11,6 @@ client = discord.Client(intents=discord.Intents.default())
 
 # Time Zone, Channel Id
 time_zones = [
-    ["UTC -5", "EST", 1043307450251628594],
-    ["UTC +1", "CET", 1043307517377257594],
-    ["UTC +0", "WET", 1043307613003186186]
 ]
 
 
