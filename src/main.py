@@ -29,7 +29,7 @@ async def on_ready():
 
             now = datetime.now(ZoneInfo(time_zone))
             time_string = f"🕒 {now.hour}:{now.minute} ({suffix})"
-            await client.get_channel(channel_id).edit(name=time_string)
+            await client.fetch_channel(channel_id).edit(name=time_string)
 
         await asyncio.sleep(1200)
 
