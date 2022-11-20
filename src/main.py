@@ -29,9 +29,9 @@ async def on_ready():
 
             now = datetime.now(ZoneInfo(time_zone))
             time_string = f"🕒 {now.hour}:{now.minute} ({suffix})"
-            await client.fetch_channel(channel_id).edit(name=time_string)
-
-        await asyncio.sleep(1200)
+            channel = await client.fetch_channel(channel_id)
+            await channel.edit(name=time_string)
+            await asyncio.sleep(1200)
 
 DISCORD_TOKEN = os.getenv('DISCORD_TOKEN')
 client.run(DISCORD_TOKEN)
