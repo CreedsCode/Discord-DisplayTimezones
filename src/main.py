@@ -13,7 +13,10 @@ client = discord.Client(intents=discord.Intents.default())
 time_zones = [
 ]
 
-
+@bot.slash_command(description="Hello")
+async def hello(interaction: discord.ApplicationContext):
+    await interaction.respond('Pog', ephemeral=True)
+    
 @client.event
 async def on_ready():
     print(f'{client.user} has connected to Discord!')
