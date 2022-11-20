@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-client = discord.Client(intents=discord.Intents.default())
+client = discord.Bot(intents=discord.Intents.default())
 
 # Time Zone, Channel Id
 time_zones = [
