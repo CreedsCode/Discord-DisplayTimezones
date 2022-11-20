@@ -13,7 +13,7 @@ client = discord.Client(intents=discord.Intents.default())
 time_zones = [
 ]
 
-@bot.slash_command(description="Hello")
+@client.slash_command(description="Hello")
 async def hello(interaction: discord.ApplicationContext):
     await interaction.respond('Pog', ephemeral=True)
     
