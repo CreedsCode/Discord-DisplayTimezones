@@ -19,7 +19,7 @@ async def hello(interaction: discord.ApplicationContext):
     
 @client.event
 async def on_ready():
-    print(f'{client.user} has connected to Discord!')
+    print(f'{client.user} has connected to Discord!!!')
 
     while True:
         for channels in time_zones:
